@@ -1,0 +1,29 @@
+name: Cache
+
+inputs:
+  scope:
+    required: true
+    description: Scope of files to cache
+      Example => 'dependencies,build'
+      Possible values for the scope => [dependencies, build]
+
+runs:
+  using: composite
+  steps: 
+    - name: Store dependencies cache
+      id: dependencies
+      if: ${{ contains(inputs.scope, 'dependencies') }}
+      uses: actions/cache@v3
+      with:
+        key: dependencies-${{ hashFiles('./bun.lockb') }}
+        path: |
+          ./node_modules/**
+
+    - name: Store build cache
+      id: build
+      if: ${{ contains(inputs.scope, 'build') }}
+      uses: actions/cache@v3
+      with:
+        key: build-${{ hashFiles('./src/**') }}
+        path: |
+          ./dist/**

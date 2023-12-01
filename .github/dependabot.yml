@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    groups:
+      eslint:
+        patterns:
+          - "@typescript-eslint/*"
+          - "eslint"
+    schedule:
+      interval: "daily"
+    labels: ["dependencies"]
+    commit-message:
+      prefix: "chore"
+      include: "scope"

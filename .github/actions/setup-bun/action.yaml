@@ -1,0 +1,13 @@
+name: Setup Bun
+
+runs:
+  using: "composite"
+  steps: 
+    - uses: ./.github/actions/cache
+      with:
+        scope: dependencies
+    - uses: oven-sh/setup-bun@v1
+      with:
+        bun-version: latest
+    - run: bun install
+      shell: bash
