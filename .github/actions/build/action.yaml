@@ -1,0 +1,10 @@
+name: Build
+
+runs:
+  using: "composite"
+  steps: 
+    - uses: ./.github/actions/cache
+      with:
+        scope: build
+    - run: bun --bun run build
+      shell: bash

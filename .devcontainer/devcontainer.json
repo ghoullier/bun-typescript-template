@@ -1,0 +1,21 @@
+{
+    "name": "Node.js",
+    // Image definition
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+    // Configure tool-specific properties.
+    "customizations": {
+      // Configure properties specific to VS Code.
+      "vscode": {
+        // Set *default* container specific settings.json values on container create.
+        "settings": {},
+  
+        // Add the IDs of extensions you want installed when the container is created.
+        "extensions": [
+          "github.vscode-github-actions",
+          "oven.bun-vscode"
+        ]
+      }
+    },
+    "postCreateCommand": "curl -fsSL https://bun.sh/install | bash"
+  }
+  

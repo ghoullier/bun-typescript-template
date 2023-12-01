@@ -1,0 +1,13 @@
+name: Prevent uncommit changes
+
+runs:
+  using: "composite"
+  steps: 
+    - shell: bash
+      run: |
+        if [ "$(git status --porcelain | wc -l)" -gt "0" ]; then
+          echo "Detected uncommitted changes after build. See status below:"
+          git status --porcelain
+          exit 1
+        fi
+
