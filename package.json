@@ -1,60 +1,62 @@
 {
-    "name": "@ghoullier/bun-typescript-template",
-    "description": "Provide a modern and ready to use template to setup a typescript project",
-    "version": "0.0.0",
-    "type": "module",
-    "scripts": {
-      "build:lib": "bun build --minify --outdir=dist src/index.ts",
-      "build:types": "tsc -p tsconfig.build.json",
-      "build": "bun build:lib && bun build:types",
-      "lint": "npm run lint:lib && npm run lint:exports && npm run lint:package",
-      "lint:lib": "eslint --ext .ts src",
-      "lint:exports": "attw --pack . --ignore-rules no-resolution cjs-resolves-to-esm",
-      "lint:package": "publint ."
+  "name": "@ghoullier/bun-typescript-template",
+  "description": "Provide a modern and ready to use template to setup a typescript project",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build:lib": "bun build --minify --outdir=dist src/index.ts",
+    "build:types": "tsc -p tsconfig.build.json",
+    "build": "bun build:lib && bun build:types",
+    "lint": "npm run lint:lib && npm run lint:exports && npm run lint:package",
+    "lint:lib": "eslint --ext .ts src",
+    "lint:exports": "attw --pack . --ignore-rules no-resolution cjs-resolves-to-esm",
+    "lint:package": "publint ."
+  },
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
     },
-    "files": [
-      "dist",
-      "package.json"
+    "./package.json": "./package.json"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "0.13.3",
+    "@tsconfig/strictest": "2.0.2",
+    "@typescript-eslint/eslint-plugin": "6.14.0",
+    "@typescript-eslint/parser": "6.14.0",
+    "bun-types": "1.0.16",
+    "eslint": "8.55.0",
+    "publint": "0.2.6",
+    "typescript": "5.3.3"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/strict-type-checked",
+      "plugin:@typescript-eslint/stylistic-type-checked"
     ],
-    "exports": {
-      ".": {
-        "types": "./dist/index.d.ts",
-        "import": "./dist/index.js",
-        "default": "./dist/index.js"
-      },
-      "./package.json": "./package.json"
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": true,
+      "tsconfigRootDir": "."
     },
-    "devDependencies": {
-      "@arethetypeswrong/cli": "0.13.3",
-      "@tsconfig/strictest": "2.0.2",
-      "@typescript-eslint/eslint-plugin": "6.14.0",
-      "@typescript-eslint/parser": "6.14.0",
-      "bun-types": "1.0.16",
-      "eslint": "8.55.0",
-      "publint": "0.2.6",
-      "typescript": "5.3.3"
-    },
-    "publishConfig": {
-      "registry": "https://npm.pkg.github.com"
-    },
-    "eslintConfig": {
-      "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended-type-checked",
-        "plugin:@typescript-eslint/stylistic-type-checked"
-      ],
-      "plugins": [
-        "@typescript-eslint"
-      ],
-      "parser": "@typescript-eslint/parser",
-      "parserOptions": {
-        "project": true,
-        "tsconfigRootDir": "."
-      },
-      "root": true,
-      "rules": {
-        "@typescript-eslint/no-empty-interface": "off"
-      }
+    "root": true,
+    "rules": {
+      "@typescript-eslint/no-empty-interface": "off",
+      "@typescript-eslint/explicit-function-return-type": [
+        "error"
+      ]
     }
   }
-  
+}

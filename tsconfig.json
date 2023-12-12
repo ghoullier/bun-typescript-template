@@ -1,18 +1,26 @@
 {
-    "extends": "@tsconfig/strictest/tsconfig.json",
-    "compilerOptions": {
-      "lib": ["ESNext"],
-      "module": "esnext",
-      "target": "esnext",
-      "moduleResolution": "bundler",
-      "moduleDetection": "force",
-      "allowSyntheticDefaultImports": true,
-      "declaration": true,
-      "emitDeclarationOnly": true,
-      "outDir": "dist",
-      "types": ["bun-types"]
-    },
-    "include": ["src/**/*"],
-    "exclude": ["node_modules", "dist"]
-  }
-  
+  "extends": "@tsconfig/strictest/tsconfig.json",
+  "compilerOptions": {
+    "lib": [
+      "ESNext"
+    ],
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "dist",
+    "types": [
+      "bun-types"
+    ]
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

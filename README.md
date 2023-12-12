@@ -13,6 +13,7 @@ Configure `${{secrets.DEPENDABOT_AUTOMERGE_TOKEN}}`
 Create a [fine-grained personal access tokens](https://github.com/settings/personal-access-tokens/new) with permissions below ⬇️
 
 ✅ **Read** access to metadata
+
 ✅ **Read** and **Write** access to code and pull requests
 
 ## Install project
