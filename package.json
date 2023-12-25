@@ -31,7 +31,7 @@
     "@typescript-eslint/parser": "6.15.0",
     "bun-types": "1.0.19",
     "eslint": "8.56.0",
-    "publint": "0.2.6",
+    "publint": "0.2.7",
     "typescript": "5.3.3"
   },
   "publishConfig": {
