@@ -1,7 +1,7 @@
 on:
-   push:
-     branches:
-       - main
+  push:
+    branches:
+      - main
 
 name: Semantic Release
 
@@ -30,9 +30,9 @@ jobs:
       - run: bun install
       - run: bun --bun run build
       - run: bun test
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
-          registry-url: 'https://npm.pkg.github.com'
+          registry-url: "https://npm.pkg.github.com"
         if: ${{ steps.release.outputs.release_created }}
       - run: npm publish
         env:

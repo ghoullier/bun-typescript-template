@@ -1,11 +1,11 @@
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
-    types: [ opened, synchronize, reopened, labeled ]
-  pull_request_review: 
-    types: [ submitted ]
+    branches: [main]
+    types: [opened, synchronize, reopened, labeled]
+  pull_request_review:
+    types: [submitted]
 
 name: CI
 
@@ -34,7 +34,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup-bun
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           registry-url: "https://npm.pkg.github.com"
       - uses: ./.github/actions/cache
