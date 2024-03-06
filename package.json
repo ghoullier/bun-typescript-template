@@ -33,7 +33,7 @@
     "bun-types": "1.0.30",
     "eslint": "8.57.0",
     "publint": "0.2.7",
-    "typescript": "5.3.3"
+    "typescript": "5.4.2"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
