@@ -16,6 +16,11 @@ Create a [fine-grained personal access tokens](https://github.com/settings/perso
 
 ✅ **Read** and **Write** access to code and pull requests
 
+## Builtin `jsr.io`` support
+
+
+See [jsr.io official documentation](https://jsr.io/docs/publishing-packages)
+
 ## Install project
 
 ```sh
