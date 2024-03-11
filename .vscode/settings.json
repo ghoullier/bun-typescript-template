@@ -1,5 +1,9 @@
 {
-  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports.biome": "explicit",
+    "quickfix.biome": "explicit"
+  },
+  "editor.defaultFormatter": "biomejs.biome",
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "typescript.inlayHints.variableTypes.enabled": true,
   "typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,

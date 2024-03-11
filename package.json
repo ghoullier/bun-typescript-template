@@ -8,7 +8,7 @@
     "build:types": "tsc -p tsconfig.build.json",
     "build": "bun build:lib && bun build:types",
     "lint": "npm run lint:lib && npm run lint:exports && npm run lint:package",
-    "lint:lib": "eslint --ext .ts src",
+    "lint:lib": "biome check src/*.ts",
     "lint:exports": "attw --pack . --ignore-rules no-resolution cjs-resolves-to-esm",
     "lint:package": "publint ."
   },
@@ -26,38 +26,14 @@
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "0.15.0",
+    "@biomejs/biome": "1.6.0",
     "@tsconfig/strictest": "2.0.3",
-    "@types/bun": "1.0.5",
-    "@typescript-eslint/eslint-plugin": "7.1.1",
-    "@typescript-eslint/parser": "7.1.1",
+    "@types/bun": "1.0.8",
     "bun-types": "1.0.30",
-    "eslint": "8.57.0",
     "publint": "0.2.7",
     "typescript": "5.4.2"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
-  },
-  "eslintConfig": {
-    "extends": [
-      "eslint:recommended",
-      "plugin:@typescript-eslint/strict-type-checked",
-      "plugin:@typescript-eslint/stylistic-type-checked"
-    ],
-    "plugins": [
-      "@typescript-eslint"
-    ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-      "project": true,
-      "tsconfigRootDir": "."
-    },
-    "root": true,
-    "rules": {
-      "@typescript-eslint/no-empty-interface": "off",
-      "@typescript-eslint/explicit-function-return-type": [
-        "error"
-      ]
-    }
   }
 }
