@@ -1,5 +1,43 @@
 # Changelog
 
+## [1.1.0](https://github.com/ghoullier/bun-typescript-template/compare/v1.0.0...v1.1.0) (2024-03-26)
+
+
+### Features
+
+* add jsr.io support ([#57](https://github.com/ghoullier/bun-typescript-template/issues/57)) ([eeef742](https://github.com/ghoullier/bun-typescript-template/commit/eeef742a95f8561d0ccfa7c52de96522f849ed02))
+
+
+### Miscellaneous
+
+* **deps-dev:** bump @arethetypeswrong/cli from 0.13.10 to 0.14.0 ([#48](https://github.com/ghoullier/bun-typescript-template/issues/48)) ([a0e441c](https://github.com/ghoullier/bun-typescript-template/commit/a0e441c950eff0323dd6f59e38c47263da5e6518))
+* **deps-dev:** bump @arethetypeswrong/cli from 0.13.8 to 0.13.9 ([#42](https://github.com/ghoullier/bun-typescript-template/issues/42)) ([0690aa0](https://github.com/ghoullier/bun-typescript-template/commit/0690aa094e15595d9fb2f37b683e7d4f003cc576))
+* **deps-dev:** bump @arethetypeswrong/cli from 0.13.9 to 0.13.10 ([#44](https://github.com/ghoullier/bun-typescript-template/issues/44)) ([df3097b](https://github.com/ghoullier/bun-typescript-template/commit/df3097b253cf8c0e542d025f1b546066bbdbcb9f))
+* **deps-dev:** bump @arethetypeswrong/cli from 0.14.0 to 0.14.1 ([#49](https://github.com/ghoullier/bun-typescript-template/issues/49)) ([dc1918d](https://github.com/ghoullier/bun-typescript-template/commit/dc1918dc2efc255a00073b424db2e3ed65176560))
+* **deps-dev:** bump @arethetypeswrong/cli from 0.14.1 to 0.15.0 ([#53](https://github.com/ghoullier/bun-typescript-template/issues/53)) ([97dc14a](https://github.com/ghoullier/bun-typescript-template/commit/97dc14a8c731534915e45f2377f6bf32017c55ba))
+* **deps-dev:** bump @arethetypeswrong/cli from 0.15.0 to 0.15.1 ([#61](https://github.com/ghoullier/bun-typescript-template/issues/61)) ([9b3d2ca](https://github.com/ghoullier/bun-typescript-template/commit/9b3d2ca0f998e0bcfc4904c207c8567cc1de531c))
+* **deps-dev:** bump @arethetypeswrong/cli from 0.15.1 to 0.15.2 ([#64](https://github.com/ghoullier/bun-typescript-template/issues/64)) ([e417ac4](https://github.com/ghoullier/bun-typescript-template/commit/e417ac49eff7d9cf8fa82f36da15502c1600d763))
+* **deps-dev:** bump @biomejs/biome from 1.6.0 to 1.6.1 ([#62](https://github.com/ghoullier/bun-typescript-template/issues/62)) ([196c50c](https://github.com/ghoullier/bun-typescript-template/commit/196c50c6ffd94851af838c06a6bd460b9bfd4b63))
+* **deps-dev:** bump @biomejs/biome from 1.6.1 to 1.6.2 ([#69](https://github.com/ghoullier/bun-typescript-template/issues/69)) ([231a4cd](https://github.com/ghoullier/bun-typescript-template/commit/231a4cd3f476bf2c121b4fc5700d3783022e2bbe))
+* **deps-dev:** bump @biomejs/biome from 1.6.2 to 1.6.3 ([#70](https://github.com/ghoullier/bun-typescript-template/issues/70)) ([81b8ef4](https://github.com/ghoullier/bun-typescript-template/commit/81b8ef43a802fa62e95aface087a8cb46ac951f9))
+* **deps-dev:** bump @tsconfig/strictest from 2.0.3 to 2.0.4 ([#71](https://github.com/ghoullier/bun-typescript-template/issues/71)) ([85df1af](https://github.com/ghoullier/bun-typescript-template/commit/85df1af21d61a9436f0fab68f0cd840abb70fab4))
+* **deps-dev:** bump @types/bun from 1.0.10 to 1.0.11 ([#72](https://github.com/ghoullier/bun-typescript-template/issues/72)) ([907ac3a](https://github.com/ghoullier/bun-typescript-template/commit/907ac3a29acf70f48e12a6cd5778971606cfe383))
+* **deps-dev:** bump @types/bun from 1.0.8 to 1.0.10 ([#66](https://github.com/ghoullier/bun-typescript-template/issues/66)) ([c8f8183](https://github.com/ghoullier/bun-typescript-template/commit/c8f8183f4a999a5997abba8810dc6338924c616b))
+* **deps-dev:** bump bun-types from 1.0.26 to 1.0.27 ([#46](https://github.com/ghoullier/bun-typescript-template/issues/46)) ([f833c8d](https://github.com/ghoullier/bun-typescript-template/commit/f833c8da64e4f51cc7e948aee80a164fe630b809))
+* **deps-dev:** bump bun-types from 1.0.27 to 1.0.28 ([#47](https://github.com/ghoullier/bun-typescript-template/issues/47)) ([dc4079c](https://github.com/ghoullier/bun-typescript-template/commit/dc4079c814b285186bac9631e4a29e15337d1ac0))
+* **deps-dev:** bump bun-types from 1.0.28 to 1.0.29 ([#51](https://github.com/ghoullier/bun-typescript-template/issues/51)) ([6d79a2f](https://github.com/ghoullier/bun-typescript-template/commit/6d79a2f44d2382409cafb2c985ccd84351381c08))
+* **deps-dev:** bump bun-types from 1.0.29 to 1.0.30 ([#55](https://github.com/ghoullier/bun-typescript-template/issues/55)) ([e118eae](https://github.com/ghoullier/bun-typescript-template/commit/e118eae21cbb8efb2cbe9eed12caff33f895f9ad))
+* **deps-dev:** bump bun-types from 1.0.30 to 1.0.31 ([#63](https://github.com/ghoullier/bun-typescript-template/issues/63)) ([679682d](https://github.com/ghoullier/bun-typescript-template/commit/679682d9164a76c0c745b9f4d7c836c5c66ae6ff))
+* **deps-dev:** bump bun-types from 1.0.31 to 1.0.33 ([#65](https://github.com/ghoullier/bun-typescript-template/issues/65)) ([cfb29be](https://github.com/ghoullier/bun-typescript-template/commit/cfb29bea69c4043fab3b9bb5aa5fb0d0ff93e9fb))
+* **deps-dev:** bump the eslint group with 1 update ([#50](https://github.com/ghoullier/bun-typescript-template/issues/50)) ([310ad98](https://github.com/ghoullier/bun-typescript-template/commit/310ad98f314769524501ef87988426ae7bc8588e))
+* **deps-dev:** bump the eslint group with 2 updates ([#41](https://github.com/ghoullier/bun-typescript-template/issues/41)) ([0a5c678](https://github.com/ghoullier/bun-typescript-template/commit/0a5c6786362c33de2d51eb871ba90b6cd9e5c79d))
+* **deps-dev:** bump the eslint group with 2 updates ([#45](https://github.com/ghoullier/bun-typescript-template/issues/45)) ([503a558](https://github.com/ghoullier/bun-typescript-template/commit/503a558442b1c8edfa82fadbf507e97af6cb7bad))
+* **deps-dev:** bump the eslint group with 2 updates ([#52](https://github.com/ghoullier/bun-typescript-template/issues/52)) ([073f311](https://github.com/ghoullier/bun-typescript-template/commit/073f3112f248e965e4a28ffdc4027ca094ec7c49))
+* **deps-dev:** bump the eslint group with 2 updates ([#54](https://github.com/ghoullier/bun-typescript-template/issues/54)) ([9c97197](https://github.com/ghoullier/bun-typescript-template/commit/9c97197948fa9b7d8ea99c27afe1f759ae0f3489))
+* **deps-dev:** bump typescript from 5.3.3 to 5.4.2 ([#56](https://github.com/ghoullier/bun-typescript-template/issues/56)) ([97002c3](https://github.com/ghoullier/bun-typescript-template/commit/97002c3d6c80b354d65e7c8fb882084fe7515968))
+* **deps-dev:** bump typescript from 5.4.2 to 5.4.3 ([#67](https://github.com/ghoullier/bun-typescript-template/issues/67)) ([fbe9df3](https://github.com/ghoullier/bun-typescript-template/commit/fbe9df3715bb39260a1e8e30584367319110f498))
+* migrate from `eslint` to `biome` ([#58](https://github.com/ghoullier/bun-typescript-template/issues/58)) ([14bec7e](https://github.com/ghoullier/bun-typescript-template/commit/14bec7ea2a3f41b82fc1881a0bc31aa60a11c191))
+
 ## 1.0.0 (2024-02-10)
 
 
