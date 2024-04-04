@@ -31,7 +31,7 @@
     "@types/bun": "1.0.12",
     "bun-types": "1.0.33",
     "publint": "0.2.7",
-    "typescript": "5.4.3"
+    "typescript": "5.4.4"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
