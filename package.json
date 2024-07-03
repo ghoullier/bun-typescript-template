@@ -25,7 +25,7 @@
     "./package.json": "./package.json"
   },
   "devDependencies": {
-    "@arethetypeswrong/cli": "0.15.3",
+    "@arethetypeswrong/cli": "0.16.0",
     "@biomejs/biome": "1.8.3",
     "@tsconfig/strictest": "2.0.5",
     "@types/bun": "1.1.4",
