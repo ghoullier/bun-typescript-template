@@ -3,6 +3,7 @@ import { EOL } from "node:os";
 interface Manifest {
     name: string;
     version: string;
+    license: string;
 }
 
 const jsr = Bun.file("./jsr.json", { type: "application/json" });
