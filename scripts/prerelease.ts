@@ -15,7 +15,8 @@ await Bun.write(
         {
             name: pkgContent.name,
             version: pkgContent.version,
-            exports: "./src/index.ts"
+            license: pkgContent.license,
+            exports: "./src/index.ts",
         },
         null,
         2
