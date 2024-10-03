@@ -10,12 +10,10 @@
     "lint": "npm run lint:lib && npm run lint:exports && npm run lint:package",
     "lint:lib": "biome check src/*.ts",
     "lint:exports": "attw --pack . --ignore-rules no-resolution cjs-resolves-to-esm",
-    "lint:package": "publint ."
+    "lint:package": "publint .",
+    "lint:fix": "biome check --write --unsafe"
   },
-  "files": [
-    "dist",
-    "package.json"
-  ],
+  "files": ["dist", "package.json"],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
