@@ -11,28 +11,9 @@ permissions:
   pull-requests: write
 
 jobs:
-  update-lockfile:
-    runs-on: ubuntu-latest
-    if: ${{ github.actor == 'dependabot[bot]' }}
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.event.pull_request.head.ref }}
-      - uses: ./.github/actions/setup-bun
-      - name: Set @github-actions[bot] as committer
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-      - run: git status
-      - run: git add -A
-      - run: |
-          git commit -m "chore(deps-dev): bump bun lockfile"
-      - run: git push
-
   ci-setup:
     runs-on: ubuntu-latest
     if: ${{ github.actor == 'dependabot[bot]' }}
-    needs: [update-lockfile]
     steps:
       - uses: actions/checkout@v4
         with:
@@ -58,11 +39,11 @@ jobs:
         if: ${{contains(fromJSON('["version-update:semver-patch", "version-update:semver-minor"]'), steps.metadata.outputs.update-type)}}
         run: gh pr review --approve "$PR_URL" -b "**Automatically approving** pull request because **it includes a minor/patch update**"
         env:
-          PR_URL: ${{github.event.pull_request.html_url}}
-          GITHUB_TOKEN: ${{secrets.DEPENDABOT_AUTOMERGE_TOKEN}}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GITHUB_TOKEN: ${{ secrets.DEPENDABOT_AUTOMERGE_TOKEN }}
       - name: Enable auto-merge for Dependabot PRs
         if: ${{contains(fromJSON('["version-update:semver-patch", "version-update:semver-minor"]'), steps.metadata.outputs.update-type)}}
         run: gh pr merge --auto --squash "$PR_URL"
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
-          GITHUB_TOKEN: ${{secrets.DEPENDABOT_AUTOMERGE_TOKEN}}
+          GITHUB_TOKEN: ${{ secrets.DEPENDABOT_AUTOMERGE_TOKEN }}
