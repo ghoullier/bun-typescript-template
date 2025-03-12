@@ -9,7 +9,7 @@
         "@tsconfig/strictest": "2.0.5",
         "@types/bun": "1.2.5",
         "bun-types": "1.2.2",
-        "publint": "0.3.5",
+        "publint": "0.3.9",
         "typescript": "5.7.3",
       },
     },
@@ -45,7 +45,7 @@
 
     "@loaderkit/resolve": ["@loaderkit/resolve@1.0.3", "", { "dependencies": { "@braidai/lang": "^1.0.0" } }, "sha512-oo51csrgEfeHO593bqoPOGwrX093QzDWrc/7y876b/ObDqp2Hbw+rl+3s26WRXIbnhty40T403nwU4UFX3KQCg=="],
 
-    "@publint/pack": ["@publint/pack@0.1.1", "", {}, "sha512-TvCl79Y8v18ZhFGd5mjO1kYPovSBq3+4LVCi5Nfl1JI8fS8i8kXbgQFGwBJRXczim8GlW8c2LMBKTtExYXOy/A=="],
+    "@publint/pack": ["@publint/pack@0.1.2", "", {}, "sha512-S+9ANAvUmjutrshV4jZjaiG8XQyuJIZ8a4utWmN/vW1sgQ9IfBnPndwkmQYw53QmouOIytT874u65HEmu6H5jw=="],
 
     "@sindresorhus/is": ["@sindresorhus/is@4.6.0", "", {}, "sha512-t09vSN3MdfsyCHoFcTRCH/iUtG7OJ0CsjzB8cjAmKc/va/kIgeDI/TxsigdncE/4be734m0cvIYwNaV4i2XqAw=="],
 
@@ -127,7 +127,7 @@
 
     "picocolors": ["picocolors@1.1.1", "", {}, "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA=="],
 
-    "publint": ["publint@0.3.5", "", { "dependencies": { "@publint/pack": "^0.1.1", "package-manager-detector": "^0.2.9", "picocolors": "^1.1.1", "sade": "^1.8.1" }, "bin": { "publint": "src/cli.js" } }, "sha512-/84pl/T/emCA5hHmNYqsE/x0Voikg278QmFwNiORYqnZgqeII2HSZ+aAGs4frfDpOCQlU1SAgYloz8ayJGMbIg=="],
+    "publint": ["publint@0.3.9", "", { "dependencies": { "@publint/pack": "^0.1.2", "package-manager-detector": "^0.2.9", "picocolors": "^1.1.1", "sade": "^1.8.1" }, "bin": { "publint": "src/cli.js" } }, "sha512-irTwfRfYW38vomkxxoiZQtFtUOQKpz5m0p9Z60z4xpXrl1KmvSrX1OMARvnnolB5usOXeNfvLj6d/W3rwXKfBQ=="],
 
     "require-directory": ["require-directory@2.1.1", "", {}, "sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q=="],
 
