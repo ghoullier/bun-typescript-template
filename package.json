@@ -26,7 +26,7 @@
     "@arethetypeswrong/cli": "0.17.4",
     "@biomejs/biome": "1.9.4",
     "@tsconfig/strictest": "2.0.5",
-    "@types/bun": "1.2.10",
+    "@types/bun": "1.2.11",
     "bun-types": "1.2.11",
     "publint": "0.3.12",
     "typescript": "5.8.3"
