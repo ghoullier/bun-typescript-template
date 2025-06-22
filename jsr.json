@@ -1,13 +1,7 @@
 {
   "exports": "./src/index.ts",
   "publish": {
-    "include": [
-      "README.md",
-      "src/*.ts"
-    ],
-    "exclude": [
-      "src/__snapshots__",
-      "src/*.test.ts"
-    ]
+    "include": ["README.md", "src/*.ts"],
+    "exclude": ["src/__snapshots__", "src/*.test.ts"]
   }
 }
