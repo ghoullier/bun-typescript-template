@@ -30,7 +30,7 @@
     "@biomejs/biome": "2.1.4",
     "@tsconfig/strictest": "2.0.5",
     "@types/bun": "1.2.20",
-    "bun-types": "1.2.19",
+    "bun-types": "1.2.20",
     "publint": "0.3.12",
     "typescript": "5.9.2"
   },
