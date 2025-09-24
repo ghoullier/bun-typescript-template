@@ -31,7 +31,7 @@
     "@tsconfig/strictest": "2.0.6",
     "@types/bun": "1.2.22",
     "bun-types": "1.2.22",
-    "publint": "0.3.12",
+    "publint": "0.3.13",
     "typescript": "5.9.2"
   },
   "publishConfig": {
