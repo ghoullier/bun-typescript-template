@@ -21,7 +21,7 @@ jobs:
   ci-setup:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: ./.github/actions/setup-bun
       - uses: ./.github/actions/build
       - uses: ./.github/actions/prevent-uncommit-changes
@@ -36,9 +36,9 @@ jobs:
       packages: write # to publish packages (npm publish)
       id-token: write # The OIDC ID token is used for authentication with JSR.
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: ./.github/actions/setup-bun
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           registry-url: "https://npm.pkg.github.com"
       - uses: ./.github/actions/cache
