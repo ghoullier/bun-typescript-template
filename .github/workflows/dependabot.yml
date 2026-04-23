@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           ref: ${{ github.event.pull_request.head.ref }}
       - uses: ./.github/actions/setup-bun
@@ -29,12 +29,12 @@ jobs:
     if: ${{ github.actor == 'dependabot[bot]' }}
     needs: [ci-setup]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           ref: ${{ github.event.pull_request.head.ref }}
       - name: Dependabot metadata
         id: metadata
-        uses: dependabot/fetch-metadata@v1
+        uses: dependabot/fetch-metadata@v3
       - name: Approve a PR
         if: ${{contains(fromJSON('["version-update:semver-patch", "version-update:semver-minor"]'), steps.metadata.outputs.update-type)}}
         run: gh pr review --approve "$PR_URL" -b "**Automatically approving** pull request because **it includes a minor/patch update**"
