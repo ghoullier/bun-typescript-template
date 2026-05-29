@@ -1,7 +1,7 @@
 {
   "name": "@ghoullier/bun-typescript-template",
   "description": "Provide a modern and ready to use template to setup a typescript project",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "scripts": {
     "build:lib": "bun build --minify --outdir=dist src/index.ts",
