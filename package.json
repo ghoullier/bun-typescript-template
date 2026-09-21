@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "0.18.5",
-    "@biomejs/biome": "2.5.13",
+    "@biomejs/biome": "2.5.14",
     "@tsconfig/strictest": "2.0.8",
     "@types/bun": "1.4.2",
     "bun-types": "1.4.2",
